@@ -1,0 +1,26 @@
+<!-- public/challenge2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 2: Password Cracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Challenge 2: Password Cracking</h1>
+        <p>Your task is to crack the hash provided in the file to reveal the flag. The answer format should be <strong>FLAG{cracked_password}</strong>.</p>
+        
+        <!-- Download Hash File -->
+        <a href="/download/hash" class="btn">Download Hash File</a>
+        
+        <!-- Submission Form -->
+        <form action="/submit-password-crack" method="POST">
+            <label for="answer">Enter the Flag:</label>
+            <input type="text" id="answer" name="answer" required>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!-- public/challenge4.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 4: Trivia Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Challenge 4: Trivia Quiz</h1>
+        <p>Answer the following cybersecurity questions. You need a score of at least 80% to reveal the flag.</p>
+
+        <!-- Quiz Form -->
+        <form action="/submit-trivia" method="POST">
+            
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. Which of the following is the primary reason for using multi-factor authentication (MFA) in cybersecurity?</p>
+                <label><input type="radio" name="q1" value="a"> To make logging in faster and easier</label><br>
+                <label><input type="radio" name="q1" value="b"> To ensure only the account owner can reset their password</label><br>
+                <label><input type="radio" name="q1" value="c"> To reduce the effectiveness of password-only attacks</label><br>
+                <label><input type="radio" name="q1" value="d"> To monitor the user’s physical location</label>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. When a website uses HTTPS rather than HTTP, what does it primarily protect?</p>
+                <label><input type="radio" name="q2" value="a"> User data from being altered by unauthorized parties during transmission</label><br>
+                <label><input type="radio" name="q2" value="b"> The website from being hacked</label><br>
+                <label><input type="radio" name="q2" value="c"> The users' passwords from being stored insecurely</label><br>
+                <label><input type="radio" name="q2" value="d"> The website's data from being leaked after storage</label>
+            </div>
+            
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. An employee receives an email with an urgent request from their “CEO” asking for sensitive information. What is the best initial response?</p>
+                <label><input type="radio" name="q3" value="a"> Reply and confirm what information is needed</label><br>
+                <label><input type="radio" name="q3" value="b"> Verify the request by calling the CEO directly or consulting IT</label><br>
+                <label><input type="radio" name="q3" value="c"> Forward the email to a coworker for advice</label><br>
+                <label><input type="radio" name="q3" value="d"> Delete the email immediately</label>
+            </div>
+            
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. A company decides to use a firewall to protect its internal network. Which of the following does a firewall primarily protect against?</p>
+                <label><input type="radio" name="q4" value="a"> Unauthorized network traffic entering the system</label><br>
+                <label><input type="radio" name="q4" value="b"> Virus infections on the internal network</label><br>
+                <label><input type="radio" name="q4" value="c"> User errors that cause accidental data deletion</label><br>
+                <label><input type="radio" name="q4" value="d"> Phishing emails targeting employees</label>
+            </div>
+            
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. What is the main reason for a security professional to prefer hashing over encryption for storing passwords?</p>
+                <label><input type="radio" name="q5" value="a"> Hashing is reversible and allows password recovery</label><br>
+                <label><input type="radio" name="q5" value="b"> Hashing is faster than encryption</label><br>
+                <label><input type="radio" name="q5" value="c"> Hashing is one-way, so even the system cannot retrieve the original password</label><br>
+                <label><input type="radio" name="q5" value="d"> Hashing allows more complex passwords</label>
+            </div>
+            
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. In social engineering, why is “pretexting” often effective?</p>
+                <label><input type="radio" name="q6" value="a"> It relies on creating realistic but false scenarios to gain trust</label><br>
+                <label><input type="radio" name="q6" value="b"> It makes use of technical vulnerabilities in networks</label><br>
+                <label><input type="radio" name="q6" value="c"> It focuses on guessing passwords or security questions</label><br>
+                <label><input type="radio" name="q6" value="d"> It involves malicious software disguised as legitimate files</label>
+            </div>
+            
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. What is the primary purpose of using a Virtual Private Network (VPN) when connecting to public Wi-Fi?</p>
+                <label><input type="radio" name="q7" value="a"> To prevent malware infections on the device</label><br>
+                <label><input type="radio" name="q7" value="b"> To hide browsing activity and encrypt data transmission</label><br>
+                <label><input type="radio" name="q7" value="c"> To allow faster internet speeds</label><br>
+                <label><input type="radio" name="q7" value="d"> To ensure that only the VPN provider can monitor activity</label>
+            </div>
+            
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. A company implements a “least privilege” policy for user accounts. What is the intended benefit of this approach?</p>
+                <label><input type="radio" name="q8" value="a"> To simplify account management and permissions</label><br>
+                <label><input type="radio" name="q8" value="b"> To allow employees to access only the files they need for their work</label><br>
+                <label><input type="radio" name="q8" value="c"> To track employee activity more effectively</label><br>
+                <label><input type="radio" name="q8" value="d"> To increase overall system performance</label>
+            </div>
+            
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. If an attacker successfully uses a buffer overflow attack, what is likely the primary goal?</p>
+                <label><input type="radio" name="q9" value="a"> To install malware onto the system</label><br>
+                <label><input type="radio" name="q9" value="b"> To gain unauthorized access or control over the system</label><br>
+                <label><input type="radio" name="q9" value="c"> To overload the network and cause a denial of service</label><br>
+                <label><input type="radio" name="q9" value="d"> To disable firewall protections temporarily</label>
+            </div>
+            
+            <!-- Question 10 -->
+            <div class="question">
+                <p>10. A website uses CAPTCHAs to protect itself. Which attack is this primarily designed to prevent?</p>
+                <label><input type="radio" name="q10" value="a"> Man-in-the-middle attacks</label><br>
+                <label><input type="radio" name="q10" value="b"> Automated bots submitting fake data or requests</label><br>
+                <label><input type="radio" name="q10" value="c"> SQL injection attempts</label><br>
+                <label><input type="radio" name="q10" value="d"> Phishing scams targeting users</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Submit Answers</button>
+        </form>
+    </div>
+</body>
+</html>

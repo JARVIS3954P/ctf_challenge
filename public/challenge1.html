@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge 1 - Basic Web Exploits</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Challenge 1: Basic Web Exploits</h2>
+        <p>Access the admin page and find the hidden flag.</p>
+        <form id="flag-form" method="POST">
+            <input type="text" id="flag_submission" name="flag_submission" placeholder="Enter the flag" required>
+            <button type="submit">Submit Flag</button>
+        </form>
+	 <a href="/login" class="btn">Go to Admin Login Panel</a>
+        <div id="response"></div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

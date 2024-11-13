@@ -1,0 +1,26 @@
+<!-- public/challenge3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 3: Forensics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Challenge 3: Forensics</h1>
+        <p>Analyze the image file to uncover the hidden flag. The answer format should be <strong>FLAG{hidden_text}</strong>.</p>
+        
+        <!-- Download Image File -->
+        <a href="/download/image" class="btn">Download Image File</a>
+        
+        <!-- Submission Form -->
+        <form action="/submit-forensics" method="POST">
+            <label for="answer">Enter the Flag:</label>
+            <input type="text" id="answer" name="answer" required>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
